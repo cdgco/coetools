@@ -1,5 +1,8 @@
 # COE Tools
 
+![Light Mode Home](https://github.com/cdgco/coetools/blob/master/docs/light-home.png?raw=true)
+
+
 COE Tools is the internal tool management system for OSU's College of Engineering IT department. It is a dynamic link / tool manager with two primary sections, the toolbar and the tool directory.
 
 All tools are managed from the tool directory, which not only allows you to add remove or edit tools from the website, but search, filter and view extra data about all tools.
@@ -62,3 +65,14 @@ All tools are stored in a MySQL database with 1 row for each tool. Tools are gra
 Custom CSS is in frontend/assets/css/style.css. Most CSS is just for added compatibility with footable.
 
 frontend/menu.php contains the function to generate a dynamic menu based off data from MySQL. Creates associative array from MySQL rows, filters by display type then loops through adding tools as list items in html. "data-sort" attribute is used by JS script in frontend pages to sort all list items alphabetically.
+
+# Example Images
+
+## Dark mode with drag and drop editor open
+![Dark Mode Home With Editor](https://github.com/cdgco/coetools/blob/master/docs/dark-home-editor.png?raw=true)
+
+## Light mode tool directory with category filter / search open
+![Light Mode Tool Directory](https://github.com/cdgco/coetools/blob/master/docs/light-directory-dropdown.png?raw=true)
+
+## Light mode tool directory add-tool dialog
+![Light Mode Add Tool Dialog](https://github.com/cdgco/coetools/blob/master/docs/light-add-tool-dialog.png?raw=true)
