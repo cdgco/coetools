@@ -28,12 +28,10 @@ Finally, COE Tools allows users to customize their interface with a drag and dro
 
 * Run `yarn install` in the `frontend` folder
 * Create a MySQL database and enter the credentials in `frontend/includes/db.php`
-* Initialize your MySQL db with the `init.db` file
-
+* Initialize your MySQL db with the `init.sql` file
 * Replace `ou=groups,dc=example,dc=com` and `CN=example,OU=Groups,DC=example,DC=com` in `.htaccess` with your distinguished name.
 * Replace `dc=example,dc=com` and `ou=groups,dc=example,dc=com` in `frontend\includes\ldap.php` with your distinguished name.
 * Replace `dc=example,dc=com` and `ou=groups,dc=example,dc=com` in `frontend\includes\menu.php` with your distinguished name.
-
 * Replace `support` on line 19 in `frontend\includes\menu.php` with the name of the ldap group who should have admin privelages.
 * Replace `coe_` on line 19 in `frontend\includes\menu.php` with the prefix of ldap users who should have admin privelages.
 * Replace `roeserc` on line 19 in `frontend\includes\menu.php` with the usernane of an ldap user who should have admin privelages.
