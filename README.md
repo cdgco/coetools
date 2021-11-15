@@ -14,10 +14,10 @@ Furthermore, tools can be hidden and shown only to users in the "admin" group.
 Tools may be added from the web tool directory as either a link that opens in a new tab, the same tab, or an iframe within the COE Tools interface.
 Tools may be organized with a name, description, and category, and can be added directly to the toolbar, a toolbar dropdown category, or only shown in the tool directory.
 
-The tool directory shows a table of tools which may be sorted or name, category or admin only status, filtered by category, and searched by any metadata linked to the tool.
+The tool directory shows a table of tools which may be sorted by name, category or admin only status, filtered by category, and searched by any metadata linked to the tool.
 
 COE Tools features user specific memory which allows users to add specific tools to their favorites which will save them to their home page.
-Additionally, COE Toosl will keep track of a users 5 most recent tools on their home page.
+Additionally, COE Tools will keep track of a users 5 most recent tools on their home page.
 Finally, COE Tools allows users to customize their interface with a drag and drop toolbar editor to rearrange items and hide irrelevant tools, as well as a light / dark mode switch and a button to reset the interface to it's defaults.
 
 # Requirements
