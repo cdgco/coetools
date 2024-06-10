@@ -2,6 +2,9 @@
 
 ![Light Mode Home](https://github.com/cdgco/coetools/blob/master/docs/light-home.png?raw=true)
 
+> [!IMPORTANT]
+>## COE Tools React is coming soon!
+> COE Tools has been rewritten from the ground up in React, featuring a modular authentication system (LDAP, SAML, & OAuth), a blazing fast search engine, separate production and staging environments, plugins, an updated UI, and improved error handling. COE Tools React still runs on a PHP backend but no longer requires Apache and LDAP. COE Tools React is undergoing some finishing touches / documentation and will be open sourced soon.
 
 COE Tools is the internal tool management system for OSU's College of Engineering IT department. It is a dynamic link / tool manager with two primary sections, the toolbar and the tool directory.
 
