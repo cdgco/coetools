@@ -325,7 +325,7 @@ The manifest for an extension card must include the following fields:
 - `staffOnly`: A boolean to restrict the extension to staff users.
 - `component`: An `import()` statement to the JSX component.
 
-```json
+```
 {
   title: 'Example Card',
   id: 'example',
@@ -389,7 +389,8 @@ The manifest for an extension page must include the following fields:
 - `protected`: A boolean to restrict the extension to logged in users.
 - `staffOnly`: A boolean to restrict the extension to staff users.
 - `display`: A string to determine where the extension is displayed. Options are `0` for show in category dropdown, `1` for show directly in toolbar, and `2` for hide from toolbar.
-```json
+
+```
 {
   id: 'example',
   title: 'Example Page',
@@ -433,7 +434,7 @@ The manifest for an extension settings page must include the following fields:
 - `staffOnly`: A boolean to restrict the extension to staff users.
 - `component`: An `import()` statement to the JSX component.
 
-```json
+```
 {
   'title': 'Example Settings',
   'id': 'example',
