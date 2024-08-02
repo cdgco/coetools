@@ -1,0 +1,11 @@
+{
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        }
+    },
+    "require": {
+        "league/oauth2-client": "^2.7",
+        "onelogin/php-saml": "^4.2"
+    }
+}
