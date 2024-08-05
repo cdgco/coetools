@@ -1,5 +1,9 @@
 # COE Tools
 
+![Home](https://github.com/cdgco/coetools/blob/main/docs/home.png?raw=true)  | ![Tool Directory](https://github.com/cdgco/coetools/blob/main/docs/directory.png?raw=true)
+:-------------------------:|:-------------------------:|
+
+
 COE Tools is a web tool management system built for the Oregon State University COE IT department which provides a database for tracking links and web tools with a dynamic toolbar, tool inventory, recent and favorite tools, profile management, and plugins. It supports user authentication, user roles, and user preferences with the option for either a LDAP, SAML, or OAuth authentication provider.
 
 COE Tools is built in PHP and JavaScript with a React frontend, and includes a development and production environment with separate build configurations for local and remote development.
