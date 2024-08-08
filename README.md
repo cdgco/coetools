@@ -72,10 +72,10 @@ frontend/menu.php contains the function to generate a dynamic menu based off dat
 # Example Images
 
 ## Dark mode with drag and drop editor open
-![Dark Mode Home With Editor](https://github.com/cdgco/coetools/blob/master/docs/dark-home-editor.png?raw=true)
+![Dark Mode Home With Editor](https://github.com/cdgco/coetools/blob/1.0.0/docs/dark-home-editor.png?raw=true)
 
 ## Light mode tool directory with category filter / search open
-![Light Mode Tool Directory](https://github.com/cdgco/coetools/blob/master/docs/light-directory-dropdown.png?raw=true)
+![Light Mode Tool Directory](https://github.com/cdgco/coetools/blob/1.0.0/docs/light-directory-dropdown.png?raw=true)
 
 ## Light mode tool directory add-tool dialog
-![Light Mode Add Tool Dialog](https://github.com/cdgco/coetools/blob/master/docs/light-add-tool-dialog.png?raw=true)
+![Light Mode Add Tool Dialog](https://github.com/cdgco/coetools/blob/1.0.0/docs/light-add-tool-dialog.png?raw=true)
