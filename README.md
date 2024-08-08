@@ -283,7 +283,7 @@ import { StatusCardStatic } from '@/components/Cards';
 The `StatusCardStatic` component is a single card that takes children as a prop.
 
 ```jsx
-<StatusCardStatic title="Card Title">
+<StatusCardStatic>
   <p>Card Content</p>
 </StatusCardStatic>
 ```
