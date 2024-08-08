@@ -94,7 +94,7 @@ $stripDomain = false; // Strip domain from email address
 
 ### LDAP
 
-To use LDAP authentication, set `$authProvider` to `'ldap'` and configure the LDAP settings.
+To use LDAP authentication, set `$authProvider` to `ldap` and configure the LDAP settings.
 
 ```php
 $ldapSettings = array(
@@ -113,7 +113,7 @@ Leaving the `userGroups` and `adminGroups` arrays empty will allow all users to 
 
 ### SAML
 
-To use SAML authentication, set `$authProvider` to `'saml'` and configure the SAML settings.
+To use SAML authentication, set `$authProvider` to `saml` and configure the SAML settings.
 
 ```php
 $samlSettings = array(
@@ -184,7 +184,7 @@ SAML has been tested with the following providers, but settings may need to be a
     - `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` -> `email`
 ### OAuth
 
-To use OAuth authentication, set `$authProvider` to `'oauth'` and configure the OAuth settings.
+To use OAuth authentication, set `$authProvider` to `oauth` and configure the OAuth settings.
 
 ```php
 $oauthSettings = array(
@@ -196,7 +196,7 @@ $oauthSettings = array(
   'userGroups'              => [],
   'adminGroups'             => [],
   'scope'                   => 'openid profile email offline',
-  'propmt'                  => 'select_account'
+  'prompt'                  => 'select_account'
 );
 ```
 
