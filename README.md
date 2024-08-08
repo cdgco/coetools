@@ -49,8 +49,6 @@ VITE_THEME_COLOR = "#60a5fa"
 
 If you are hosting the API on a different server, or are aliasing the frontend to a different directory, you can set the `API_URL_PROD` / `API_URL_DEV` and `FRONTEND_URL_PROD` / `FRONTEND_URL_DEV` variables to the full URL of the API server and source directory, respectively.
 
-```
-
 Then, configure the backend connection by copying `config.example.php` to `config.php` in the `api` folder and updating the configuration options.
 
 ```bash
