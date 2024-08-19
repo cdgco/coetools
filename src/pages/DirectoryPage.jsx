@@ -202,7 +202,7 @@ function DirectoryPage() {
 
   const header = renderHeader();
   return (
-    <DefaultLayout>
+    <DefaultLayout title="Tool Directory">
       <Modals.ToolModal tool={tool} setTool={setTool} showModal={showToolModal} setShowModal={setShowToolModal} mode={modalMode} onSubmit={submitModal} />
       <Modals.DeleteToolModal tool={tool} showModal={showDeleteModal} setShowModal={setShowDeleteModal} setDeletedTools={setDeletedTools} deletedTools={deletedTools} />
       <div className={`p-5 mb-4 rounded-3 ${nightMode ? 'bg-dark nightMode' : ''}`}>

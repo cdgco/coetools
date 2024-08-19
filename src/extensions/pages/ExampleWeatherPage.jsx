@@ -1,6 +1,5 @@
 import { useContext, useState, useEffect } from 'react';
 import { DataContext } from '@/DataContext';
-import { DefaultLayout } from '@/layouts';
 import { Alert, Card, Row, Col } from 'react-bootstrap';
 
 const ExampleWeatherPage = ({ getUserData, manifest }) => {
@@ -86,46 +85,44 @@ const ExampleWeatherPage = ({ getUserData, manifest }) => {
   }, [preferences]);
 
   return (
-    <DefaultLayout>
-      <div className={`p-5 mb-4 rounded-3 ${context.nightMode ? "bg-dark" : ""}`}>
-        <h2>Current Weather</h2>
-        { error 
-        ? <Alert variant="danger">{error}</Alert> 
-        : weatherData 
-          ? <>
-              <Card data-bs-theme={context.nightMode ? 'dark' : undefined}>
-                <Card.Body>
-                  <Card.Text>
-                    Temperature: {weatherData.temperature}°{preferences.unit === 'fahrenheit' ? 'F' : 'C'}
-                    <br />
-                    Wind Speed: {weatherData.windspeed} {preferences.unit === 'fahrenheit' ? 'mph' : 'm/s'}
-                    <br />
-                    Conditions: {getWeatherDescription(weatherData.weathercode)}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-              <h2 className="mt-4">7-Day Forecast</h2>
-              <Row>
-              {forecastData.temperature_2m_min && forecastData.temperature_2m_min.map((minTemp, index) => (
-                  <Col key={index} sm={6} md={4} lg={3} className="mb-4">
-                    <Card data-bs-theme={context.nightMode ? 'dark' : undefined}>
-                      <Card.Body>
-                        <Card.Title>{getDayName(index)}</Card.Title>
-                        <Card.Text>
-                          Min Temp: {minTemp}°{preferences.unit === 'fahrenheit' ? 'F' : 'C'}
-                          <br />
-                          Max Temp: {forecastData.temperature_2m_max[index]}°{preferences.unit === 'fahrenheit' ? 'F' : 'C'}
-                        </Card.Text>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                ))}
-              </Row>
-            </>
-          : <Alert variant="info">Loading...</Alert>
-        }
-      </div>
-    </DefaultLayout>
+    <div className={`p-5 mb-4 rounded-3 ${context.nightMode ? "bg-dark" : ""}`}>
+      <h2>Current Weather</h2>
+      { error 
+      ? <Alert variant="danger">{error}</Alert> 
+      : weatherData 
+        ? <>
+            <Card data-bs-theme={context.nightMode ? 'dark' : undefined}>
+              <Card.Body>
+                <Card.Text>
+                  Temperature: {weatherData.temperature}°{preferences.unit === 'fahrenheit' ? 'F' : 'C'}
+                  <br />
+                  Wind Speed: {weatherData.windspeed} {preferences.unit === 'fahrenheit' ? 'mph' : 'm/s'}
+                  <br />
+                  Conditions: {getWeatherDescription(weatherData.weathercode)}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <h2 className="mt-4">7-Day Forecast</h2>
+            <Row>
+            {forecastData.temperature_2m_min && forecastData.temperature_2m_min.map((minTemp, index) => (
+                <Col key={index} sm={6} md={4} lg={3} className="mb-4">
+                  <Card data-bs-theme={context.nightMode ? 'dark' : undefined}>
+                    <Card.Body>
+                      <Card.Title>{getDayName(index)}</Card.Title>
+                      <Card.Text>
+                        Min Temp: {minTemp}°{preferences.unit === 'fahrenheit' ? 'F' : 'C'}
+                        <br />
+                        Max Temp: {forecastData.temperature_2m_max[index]}°{preferences.unit === 'fahrenheit' ? 'F' : 'C'}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+          </>
+        : <Alert variant="info">Loading...</Alert>
+      }
+    </div>
   );
 };
 

@@ -63,7 +63,7 @@ function LoginPage() {
 
     return (
         !externalAuth ? (
-            <DefaultLayout>
+            <DefaultLayout title="Login">
                 <div className={`p-5 rounded-3 ${nightMode ? 'bg-dark' : ''}`}>
                     <div className="text-center">
                         <h1>Sign in to { import.meta.env.MODE === 'production' ? import.meta.env.VITE_APP_NAME : `${import.meta.env.VITE_APP_NAME} DEV` }</h1>

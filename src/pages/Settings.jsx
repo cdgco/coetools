@@ -73,7 +73,7 @@ function Settings() {
   }
   
   return (
-    <DefaultLayout nightMode={nightMode}>
+    <DefaultLayout nightMode={nightMode} title="Account Settings">
       <div className={`p-5 mb-4 rounded-3 ${nightMode ? 'bg-dark' : ''}`}>
       <h1 className="pb-2">Account Settings</h1>
       <br/>

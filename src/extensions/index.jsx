@@ -6,6 +6,7 @@ import { extensionSettings } from "./settings/manifest";
 import { Row } from 'react-bootstrap';
 import { updateGlobalData, updateSettings } from "@/utils";
 import { LoadingPage } from "@/pages";
+import { DefaultLayout } from "@/layouts";
 
 ////////////////////////////////////////
 // Validation for Extension Manifests //
@@ -200,8 +201,8 @@ const routerPageLoader = () => {
         <Suspense fallback={<LoadingPage />}>
           {
             page.protected 
-              ? <ProtectedRoute><LoadedComponent setUserData={setUserData} getUserData={getUserData} setGlobalData={setGlobalData} getGlobalData={getGlobalData} manifest={page} /></ProtectedRoute> 
-              : <LoadedComponent setUserData={setUserData} getUserData={getUserData} setGlobalData={setGlobalData} getGlobalData={getGlobalData} manifest={page} />
+              ? <ProtectedRoute><DefaultLayout title={page.title}><LoadedComponent setUserData={setUserData} getUserData={getUserData} setGlobalData={setGlobalData} getGlobalData={getGlobalData} manifest={page} /></DefaultLayout></ProtectedRoute> 
+              : <DefaultLayout title={page.title}><LoadedComponent setUserData={setUserData} getUserData={getUserData} setGlobalData={setGlobalData} getGlobalData={getGlobalData} manifest={page} /></DefaultLayout>
           }
         </Suspense>
       )

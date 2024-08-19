@@ -343,20 +343,6 @@ Pages are tools that are built into the application. Any pages that are added ca
 
 Pages can be either a single file, or a a folder with a JSX component as the entry point.
 
-The JSX file must use the `DefaultLayout` component which can be imported from `@/layouts`.
-
-```jsx
-import { DefaultLayout } from '@/layouts';
-```
-
-The `DefaultLayout` component is a layout that takes children as a prop.
-
-```jsx
-<DefaultLayout>
-  <p>Page Content</p>
-</DefaultLayout>
-```
-
 The JSX component can accept the following props to interact with the COE Tools API:
 - `getGlobalData`: A function that returns the global data for the extension.
 - `setGlobalData`: A function that sets the global data for the extension.

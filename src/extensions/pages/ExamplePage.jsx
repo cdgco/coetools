@@ -1,5 +1,3 @@
-// ALl pages should use the DefaultLayout component
-import { DefaultLayout } from '@/layouts';
 // In order to store / retrieve data, we must use DataContext and useContext
 import { useContext, useEffect } from 'react';
 import { DataContext } from '@/DataContext';
@@ -36,19 +34,17 @@ const ExamplePage = ({ getGlobalData, setGlobalData, getUserData, setUserData, m
   }
 
   return (
-    <DefaultLayout>
-      <div className={`p-5 mb-4 rounded-3 ${nightMode ? "bg-dark" : ""}`}>
-        Page Content Here
-        {
-          // You can also use a number of pre-installed libraries including:
-          // - react-bootstrap
-          // - primereact
-          // - @tanstack/react-query
-          // - react-toastify
-          // - @fortawesome/react-fontawesome
-        }
-      </div>
-    </DefaultLayout>
+    <div className={`p-5 mb-4 rounded-3 ${nightMode ? "bg-dark" : ""}`}>
+      Page Content Here
+      {
+        // You can also use a number of pre-installed libraries including:
+        // - react-bootstrap
+        // - primereact
+        // - @tanstack/react-query
+        // - react-toastify
+        // - @fortawesome/react-fontawesome
+      }
+    </div>
   );
 };
 

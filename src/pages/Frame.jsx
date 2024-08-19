@@ -49,7 +49,7 @@ function Frame() {
   }
 
   return (
-    <FrameLayout url={url}>
+    <FrameLayout url={url} title={tool.tool_name}>
       <LoadingOverlay visible={pageLoading} />
       <iframe src={url} style={{width: '100%', height: 'calc(100vh - 116px)', border: 'none'}}
               onLoad={() => setPageLoading(false)} />

@@ -45,7 +45,7 @@ function ErrorPage({ code }) {
     }
 
     return (
-        <DefaultLayout>
+        <DefaultLayout title={message}>
             <div className={`p-5 mb-4 rounded-3 d-flex flex-column align-items-center`}>
                 <h1>{code}</h1>
                 <h3>{message}</h3>

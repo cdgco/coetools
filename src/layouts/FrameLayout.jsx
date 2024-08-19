@@ -1,6 +1,14 @@
+import { useEffect } from 'react';
 import { Footer, NavigationBar } from '@/components';
 
-function FrameLayout({ children, url }) {
+function FrameLayout({ children, url, title }) {
+
+  useEffect(() => {
+    if (title) {
+      document.title = `${import.meta.env.VITE_APP_NAME} - ${title}`;
+    }
+  }, [title]);
+
   return (
     <div>
       <div>
