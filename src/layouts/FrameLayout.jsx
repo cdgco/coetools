@@ -5,7 +5,7 @@ function FrameLayout({ children, url, title }) {
 
   useEffect(() => {
     if (title) {
-      document.title = `${import.meta.env.VITE_APP_NAME} - ${title}`;
+      document.title = `${title} - ${import.meta.env.VITE_APP_NAME}`;
     }
   }, [title]);
 
