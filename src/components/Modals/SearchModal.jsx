@@ -67,7 +67,7 @@ function SearchModal({ show, setShowModal }) {
       };
       const fuse = new Fuse(options, fuseOptions);
       const fuseResults = fuse.search(query);
-      const toolResults = fuseResults.map(result => result.item)
+      const toolResults = fuseResults.map(result => result.item).filter((value, index, self) => self.findIndex(t => t.tool_name === value.tool_name) === index);
 
       setResults(toolResults);
     } else {
